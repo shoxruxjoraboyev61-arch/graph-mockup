@@ -312,6 +312,197 @@ html:not(.L) body{background:radial-gradient(1200px 700px at 15% 20%,rgba(44,123
 .chip.on{background:var(--ink)}
 .tabs.js button.on,.seg.js button.on{color:#fff}
 
+
+/* ===== scale-up pass ===== */
+body{font-size:18px}
+.in{max-width:1320px}
+.hlogo{width:clamp(150px,24vh,280px);margin-bottom:8px}
+.hero h1{font-size:clamp(44px,min(6.6vw,9.4vh),104px)}
+.sub{font-size:clamp(18px,min(1.7vw,2.7vh),23px);max-width:48ch}
+.kick{font-size:15px;padding:8px 16px}
+.pill{min-height:56px;padding:0 30px;font-size:17px}
+.nav{height:70px;padding:0 max(24px,calc((100vw - 1320px)/2 + 24px))}
+.logo{font-size:21px}.logo i{width:34px;height:34px;font-size:16px;border-radius:10px}
+.menu{gap:36px;font-size:16px}
+.nr .pill{min-height:42px;padding:0 20px;font-size:15px}
+.tbtn{width:42px;height:42px}.lang button{font-size:13px;padding:7px 11px}
+.show{max-width:1320px;gap:26px}
+.head{max-width:860px;margin-bottom:64px}
+.head h2{font-size:clamp(46px,6.4vw,92px)}
+.head p{font-size:clamp(18px,1.7vw,23px)}
+.s3 h3{font-size:28px}.s3 p{font-size:18px}.s3 b{font-size:16px}
+.tabs button,.seg button{font-size:16px;padding:11px 22px}
+.cgrid{gap:30px}.pc h3{font-size:22px}.pc .tx span{font-size:16px}
+.chip{font-size:15px;padding:11px 18px}
+.cfg{grid-template-columns:minmax(0,1fr) 380px}
+.side h3{font-size:26px}.side .desc{font-size:15px}
+.opt{font-size:15px;padding:13px 8px}
+.f>label,.lab{font-size:13px}
+.pl{padding:40px}.pl h3{font-size:23px}.pl .pr{font-size:48px}.pl ul{font-size:17px}
+.part{font-size:18px}
+.cta h2{font-size:clamp(40px,5.8vw,84px)}.ctab p{font-size:clamp(18px,1.6vw,22px)}
+.foot{font-size:16px}.foot h4{font-size:16px}.fbot{font-size:14px}
+.ed{grid-template-columns:86px minmax(0,1fr) 380px}
+.tb{font-size:12px}.tb svg{width:24px;height:24px}
+.fchip{width:112px}.fchip span{font-size:28px}
+@media(max-width:1000px){.cfg{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:1100px){.ed{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:760px){body{font-size:17px}.hlogo{width:clamp(130px,30vw,180px)}.hero h1{font-size:clamp(38px,10.5vw,52px)}.pill{min-height:52px;font-size:16px}.nav{height:62px}.nr .pill{display:none}.head h2{font-size:clamp(40px,11vw,56px)}.pl{padding:30px}}
+
+/* ===== hero row + bigger pass ===== */
+.hin{max-width:1400px}
+body{font-size:19px}
+.in{max-width:1400px}
+.nav{padding:0 max(24px,calc((100vw - 1400px)/2 + 24px));height:76px}
+.logo{font-size:23px}.logo i{width:38px;height:38px;font-size:18px}
+.menu{font-size:17px;gap:40px}
+.nr .pill{min-height:46px;font-size:16px}.tbtn{width:46px;height:46px}.lang button{font-size:14px;padding:8px 12px}
+.hrow{display:flex;align-items:center;justify-content:center;gap:clamp(28px,4vw,72px);max-width:1400px;width:100%;padding:0 24px;text-align:left}
+.hlogo{flex:none;width:auto;height:auto;margin:0}
+.hlogo img{width:100%;height:100%;object-fit:contain}
+.htx{flex:1 1 0;max-width:860px}
+.hero .acts{justify-content:flex-start}
+.hero h1{font-size:clamp(44px,min(4.9vw,9vh),100px);margin-bottom:clamp(16px,2.8vh,28px)}
+.sub{font-size:clamp(19px,min(1.8vw,2.9vh),25px);margin:0 0 clamp(22px,4vh,38px)}
+.kick{font-size:16px;padding:9px 18px}
+.pill{min-height:62px;padding:0 34px;font-size:18px}
+.show{max-width:1400px;gap:30px}
+.head{max-width:960px;margin-bottom:72px}
+.head h2{font-size:clamp(50px,7vw,104px)}
+.head p{font-size:clamp(19px,1.9vw,25px)}
+.s3 h3{font-size:31px}.s3 p{font-size:19px}
+.tabs button,.seg button{font-size:17px;padding:12px 24px}
+.pc h3{font-size:24px}.pc .tx span{font-size:17px}
+.chip{font-size:16px;padding:12px 20px}
+.cfg{grid-template-columns:minmax(0,1fr) 400px}
+.side h3{font-size:28px}.side .desc{font-size:16px}
+.opt{font-size:16px;padding:14px 8px}
+.side input:not([type=file]):not([type=color]):not([type=range]):not([type=checkbox]),.side select,.side textarea{font-size:17px;min-height:52px}
+.f>label,.lab{font-size:14px}
+.pl{padding:44px}.pl h3{font-size:25px}.pl .pr{font-size:54px}.pl ul{font-size:18px}
+.part{font-size:19px}
+.cta h2{font-size:clamp(44px,6.4vw,96px)}.ctab p{font-size:clamp(19px,1.8vw,24px)}.ctalogo{width:clamp(100px,11vw,150px)}
+.foot{font-size:17px}.foot h4{font-size:17px}.fbot{font-size:15px}
+.ed{grid-template-columns:92px minmax(0,1fr) 400px}
+.tb{font-size:13px}.tb svg{width:26px;height:26px}
+.fchip{width:120px}.fchip span{font-size:30px}.fchip small{font-size:12px}
+.rng{font-size:14px}
+@media(max-width:1000px){.cfg{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:1100px){.ed{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:860px){.hrow{flex-direction:column;text-align:center;gap:18px}.hero .acts{justify-content:center}.sub{margin:0 auto 26px}.hlogo{width:clamp(150px,40vw,220px)!important;height:auto!important}}
+@media(max-width:760px){body{font-size:17px}.hero h1{font-size:clamp(40px,11vw,56px)}.pill{min-height:54px;font-size:17px;padding:0 26px}.nav{height:64px}.nr .pill{display:none}.head h2{font-size:clamp(42px,12vw,60px)}.pl{padding:30px}.pl .pr{font-size:44px}}
+
+/* ===== rich hero ===== */
+.hin{padding-top:96px}
+.hstage{flex:none;position:relative}
+.hsin{position:absolute;inset:0;transform-style:preserve-3d}
+.hstage .core{position:absolute;left:0;top:0;width:100%;height:auto;z-index:3;animation:bob 7s ease-in-out infinite;filter:drop-shadow(0 30px 60px rgba(44,123,229,.55))}
+.L .hstage .core{filter:drop-shadow(0 30px 50px rgba(20,60,140,.25))}
+.ring{position:absolute;inset:9%;border-radius:50%;background:radial-gradient(closest-side,rgba(60,140,255,.32),rgba(60,140,255,.08) 60%,transparent 72%);z-index:0}
+.ring::after{content:"";position:absolute;inset:6%;border-radius:50%;border:1px solid rgba(140,190,255,.28);box-shadow:inset 0 0 40px rgba(80,150,255,.15)}
+.ring.r2{inset:-2%;background:none}.ring.r2::after{inset:0;border:1px dashed rgba(140,190,255,.18);animation:spin 60s linear infinite}
+.L .ring{background:radial-gradient(closest-side,rgba(44,123,229,.16),rgba(44,123,229,.04) 60%,transparent 72%)}.L .ring::after{border-color:rgba(44,123,229,.2)}.L .ring.r2::after{border-color:rgba(44,123,229,.16)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.fl{position:absolute;z-index:2;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 30px 60px -20px rgba(0,10,40,.55),0 0 0 1px rgba(255,255,255,.18);transform:translate(calc(var(--mx,0)*var(--d)*1px),calc(var(--my,0)*var(--d)*1px)) rotate(var(--r));animation:flo 8s ease-in-out infinite}
+.fl canvas{display:block;width:100%;height:auto;aspect-ratio:1}
+.f1{left:-2%;top:4%;width:31%;--r:-9deg}
+.f2{right:-1%;top:0;width:27%;--r:8deg;animation-delay:-2s}
+.f3{left:4%;bottom:0;width:26%;--r:7deg;animation-delay:-4s}
+.f4{right:-3%;bottom:6%;width:30%;--r:-6deg;animation-delay:-6s}
+@keyframes flo{50%{margin-top:-10px}}
+.chipf{position:absolute;z-index:4;padding:8px 14px;border-radius:999px;font-size:14px;font-weight:600;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 10px 30px rgba(0,0,0,.25);animation:flo 6s ease-in-out infinite}
+.L .chipf{color:#0b2a5c;background:rgba(255,255,255,.7);border-color:rgba(44,123,229,.2)}
+.c1{left:34%;top:4%}.c2{right:20%;bottom:-2%;animation-delay:-2s}.c3{left:-4%;top:52%;animation-delay:-4s}
+.stats{display:flex;gap:clamp(20px,3vw,44px);margin-top:clamp(24px,4vh,40px);padding-top:clamp(18px,3vh,26px);border-top:1px solid var(--edge2);flex-wrap:wrap}
+.stats b{display:block;font-size:clamp(26px,2.4vw,36px);font-weight:600;letter-spacing:-.03em;color:var(--ink)}
+.stats span{font-size:15px;color:var(--dim)}
+.marq{position:relative;overflow:hidden;margin-top:clamp(10px,3vh,30px);padding:22px 0;border-top:1px solid var(--edge);border-bottom:1px solid var(--edge);-webkit-mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.mt{display:flex;gap:28px;width:max-content;animation:marq 40s linear infinite;font-size:clamp(18px,1.6vw,24px);font-weight:500;color:var(--dim);white-space:nowrap}
+.mt i{font-style:normal;color:var(--blue)}
+@keyframes marq{to{transform:translateX(-50%)}}
+.hero{padding-bottom:0}
+@media(max-width:860px){.hstage{width:min(86vw,420px)!important;height:min(86vw,420px)!important}.stats{justify-content:center}}
+@media(prefers-reduced-motion:reduce){.mt,.fl,.chipf,.ring.r2::after{animation:none}}
+
+/* ===== full hero background restored ===== */
+.hero{overflow:hidden}
+.bgimg{inset:0;height:auto;opacity:1;background-position:center 75%;-webkit-mask:linear-gradient(#000 78%,transparent);mask:linear-gradient(#000 78%,transparent)}
+.L .bgimg{opacity:1}
+.bgimg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,18,38,.55),rgba(8,18,38,.1) 35%,rgba(8,18,38,.15) 70%,rgba(8,18,38,.6))}
+.L .bgimg::after{background:linear-gradient(180deg,rgba(245,248,253,.6),rgba(245,248,253,.05) 35%,rgba(245,248,253,.1) 70%,rgba(245,248,253,.7))}
+
+/* ===== whole-page background ===== */
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:url(img/bg.jpg) center 70%/cover no-repeat;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(8,18,38,.35),rgba(8,18,38,.55) 60%,rgba(8,18,38,.7))}
+.L body::before{background-image:url(img/bg_l.jpg)}
+.L body::after{background:linear-gradient(180deg,rgba(245,248,253,.35),rgba(245,248,253,.55) 60%,rgba(245,248,253,.7))}
+.bgimg{display:none}
+
+/* ===== LIQUID GLASS (iOS-style) ===== */
+:root{--lg-bg:rgba(255,255,255,.07);--lg-bd:rgba(255,255,255,.16);--lg-hi:rgba(255,255,255,.38);--lg-sh:0 20px 50px -20px rgba(0,0,0,.55)}
+.L{--lg-bg:rgba(255,255,255,.38);--lg-bd:rgba(255,255,255,.7);--lg-hi:rgba(255,255,255,.95);--lg-sh:0 20px 50px -24px rgba(20,50,110,.35)}
+.lgx,.nav,.tabs,.seg,.lang,.app,.pl:not(.hot),.s3,.kick,.pill.glass,.tbtn,.chip,.opt,.etool,.fchip,.cbtn,.md.sm .box,.ctab{
+ background:var(--lg-bg)!important;border:1px solid var(--lg-bd)!important;
+ backdrop-filter:blur(22px) saturate(180%) brightness(1.06);-webkit-backdrop-filter:blur(22px) saturate(180%) brightness(1.06);
+ box-shadow:inset 0 1px 0 var(--lg-hi),inset 0 -1px 0 rgba(255,255,255,.06),inset 0 0 24px rgba(255,255,255,.04),var(--lg-sh)!important}
+.chip.on,.opt.on{background:var(--ink)!important;color:var(--bg)!important;border-color:transparent!important}
+.app,.pl:not(.hot),.s3,.ctab,.etool{position:relative}
+.app::before,.pl:not(.hot)::before,.s3::before,.ctab::before,.nav::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.2px;pointer-events:none;
+ background:linear-gradient(130deg,rgba(255,255,255,.75),rgba(255,255,255,.08) 28%,rgba(120,210,255,.35) 52%,rgba(255,140,230,.28) 64%,rgba(255,230,140,.22) 74%,rgba(255,255,255,.5));
+ -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
+/* floating glass nav */
+.nav{top:12px;left:max(12px,calc((100vw - 1400px)/2));right:max(12px,calc((100vw - 1400px)/2));height:64px;border-radius:999px;padding:0 10px 0 18px!important}
+.nav.scrolled{background:var(--lg-bg)!important}
+/* steps as glass tiles */
+.s3{border-radius:24px;padding:26px 26px 28px;border-top:1px solid var(--lg-bd)!important}
+/* cta: blue liquid glass */
+.ctab{background:linear-gradient(160deg,rgba(80,150,255,.45),rgba(30,80,190,.35) 50%,rgba(10,40,110,.45))!important;color:#fff}
+.L .ctab{background:linear-gradient(160deg,rgba(80,150,255,.55),rgba(30,90,200,.5) 50%,rgba(15,50,130,.55))!important}
+.ctab .pill.glass{background:rgba(255,255,255,.14)!important}
+.ctab p{color:rgba(255,255,255,.88)!important}.ctab h2{color:#fff}
+/* pricing hot card glass-blue */
+.pl.hot{background:linear-gradient(160deg,rgba(70,140,255,.7),rgba(20,70,180,.6))!important;backdrop-filter:blur(22px) saturate(180%);-webkit-backdrop-filter:blur(22px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 30px 60px -30px rgba(20,70,180,.7)!important}
+/* catalog thumbs: glass frame */
+.pc .th{padding:8px;background:var(--lg-bg);border:1px solid var(--lg-bd);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:inset 0 1px 0 var(--lg-hi),var(--lg-sh)}
+.pc canvas{border-radius:16px}
+.stage{box-shadow:0 0 0 8px var(--lg-bg),0 0 0 9px var(--lg-bd)}
+.side input:not([type=file]):not([type=color]):not([type=range]):not([type=checkbox]),.side select,.side textarea{background:var(--lg-bg)!important;border-color:var(--lg-bd)!important;backdrop-filter:blur(10px)}
+.foot{background:var(--lg-bg);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+
+/* ===== glass v2: clearer background behind glass ===== */
+body::after{background:linear-gradient(180deg,rgba(6,14,32,.18),rgba(6,14,32,.32) 60%,rgba(6,14,32,.45))!important}
+.L body::after{background:linear-gradient(180deg,rgba(245,248,253,.1),rgba(245,248,253,.22) 60%,rgba(245,248,253,.35))!important}
+body::before{filter:saturate(1.25)}
+:root{--lg-bg:rgba(255,255,255,.035);--lg-bd:rgba(255,255,255,.22)}
+.L{--lg-bg:rgba(255,255,255,.16);--lg-bd:rgba(255,255,255,.8)}
+.lgx,.nav,.tabs,.seg,.lang,.app,.pl:not(.hot),.s3,.kick,.pill.glass,.tbtn,.chip,.opt,.etool,.fchip,.cbtn,.md.sm .box,.ctab,.pc .th,.foot{
+ backdrop-filter:blur(12px) saturate(200%) brightness(1.08)!important;-webkit-backdrop-filter:blur(12px) saturate(200%) brightness(1.08)!important}
+.head h2,.head p,.hero h1,.sub{text-shadow:0 2px 24px rgba(0,10,30,.45)}
+.L .head h2,.L .head p,.L .hero h1,.L .sub{text-shadow:0 2px 20px rgba(255,255,255,.7)}
+
+/* ===== glass v3: neutral iOS-style (no tint) ===== */
+body::before{filter:none!important}
+:root{--lg-bg:rgba(255,255,255,.10);--lg-bd:rgba(255,255,255,.28);--lg-hi:rgba(255,255,255,.55);--lg-sh:0 18px 40px -18px rgba(0,0,0,.45);--lg-flt:blur(16px) saturate(140%) brightness(1.06)}
+.L{--lg-bg:rgba(255,255,255,.30);--lg-bd:rgba(255,255,255,.85);--lg-hi:rgba(255,255,255,1);--lg-sh:0 18px 40px -22px rgba(30,40,70,.28);--lg-flt:blur(16px) saturate(115%) brightness(1.04)}
+.lgx,.nav,.tabs,.seg,.lang,.app,.pl:not(.hot),.s3,.kick,.pill.glass,.tbtn,.chip,.opt,.etool,.fchip,.cbtn,.md.sm .box,.pc .th,.foot{
+ background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,0) 40%),var(--lg-bg)!important;
+ backdrop-filter:var(--lg-flt)!important;-webkit-backdrop-filter:var(--lg-flt)!important;
+ border:1px solid var(--lg-bd)!important;
+ box-shadow:inset 0 1px 1px var(--lg-hi),inset 0 -1px 1px rgba(255,255,255,.12),inset 1px 0 0 rgba(255,255,255,.08),inset -1px 0 0 rgba(255,255,255,.08),var(--lg-sh)!important}
+.app::before,.pl:not(.hot)::before,.s3::before,.ctab::before,.nav::before{
+ background:linear-gradient(150deg,rgba(255,255,255,.9),rgba(255,255,255,.12) 30%,rgba(255,255,255,0) 55%,rgba(255,255,255,.25) 85%,rgba(255,255,255,.6))!important}
+.L .app::before,.L .pl:not(.hot)::before,.L .s3::before,.L .nav::before{background:linear-gradient(150deg,#fff,rgba(255,255,255,.4) 35%,rgba(255,255,255,.2) 60%,#fff)!important}
+.chip.on,.opt.on{background:var(--ink)!important;color:var(--bg)!important;box-shadow:none!important}
+.ctab{background:linear-gradient(160deg,rgba(255,255,255,.18),rgba(255,255,255,.04) 45%),rgba(40,100,220,.35)!important;backdrop-filter:blur(18px) saturate(140%)!important;-webkit-backdrop-filter:blur(18px) saturate(140%)!important;border:1px solid rgba(255,255,255,.35)!important}
+.L .ctab{background:linear-gradient(160deg,rgba(255,255,255,.35),rgba(255,255,255,.05) 45%),rgba(40,110,230,.55)!important}
+.pl.hot{background:linear-gradient(160deg,rgba(255,255,255,.2),rgba(255,255,255,0) 45%),rgba(44,123,229,.75)!important}
+
+/* ===== day mode: neutral cool white, no green cast ===== */
+.L body::before{filter:hue-rotate(14deg) saturate(.7) brightness(1.03)!important}
+.L body::after{background:linear-gradient(180deg,rgba(246,248,252,.18),rgba(246,248,252,.3) 60%,rgba(246,248,252,.42))!important}
+.L{--lg-bg:rgba(250,252,255,.38);--lg-flt:blur(16px) saturate(100%) brightness(1.04)}
+
+.ctalogo{width:clamp(130px,13vw,190px)!important}
 </style>
 </head>
 <body>
@@ -323,18 +514,16 @@ html:not(.L) body{background:radial-gradient(1200px 700px at 15% 20%,rgba(44,123
 
 <header class="hero" id="top">
   <div class="bgimg" id="bgimg"></div>
-  <div class="hin">
-    <div class="hlogo rv"><img class="sw" id="hlogo" data-d="img/hero_c.webp" data-l="img/hero_lc.webp" src="img/hero_c.webp" alt="Graph"></div>
-    <p class="kick rv"><i></i>Tashqi reklama va poligrafiya uchun mockup platforma</p>
+  <div class="hin"><div class="hrow">
+    <div class="hstage rv" id="hlogoW"><div class="hsin" id="stack">
+      <img class="sw core" id="hlogo" data-d="img/hero_c.webp" data-l="img/hero_lc.webp" src="img/hero_c.webp" alt="Graph">
+    </div></div>
+    <div class="htx" id="htx"><p class="kick rv"><i></i>Tashqi reklama va poligrafiya uchun mockup platforma</p>
     <h1 class="rv">Reklamangizni<br><span class="grad">ishlab chiqarishdan oldin ko‘ring.</span></h1>
     <p class="sub rv">Dizayn qiling — va uni 3D misolda yoki o‘z binongiz suratida real ko‘rinishda sinab ko‘ring.</p>
-    <div class="acts rv"><a class="pill solid" href="#studio">Bepul boshlash</a><a class="pill link" href="#katalog">Katalogni ko‘rish <b>›</b></a></div>
-  </div>
-  <div class="show" id="stack">
-    <div class="side-w"><div class="shot side"><canvas width="640" height="640" data-pv="banner"></canvas></div></div>
-    <div><div class="shot"><canvas width="900" height="900" data-pv="bukva"></canvas></div></div>
-    <div class="side-w"><div class="shot side"><canvas width="640" height="640" data-pv="bokal"></canvas></div></div>
-  </div>
+    <div class="acts rv"><a class="pill solid" href="#studio">Bepul boshlash</a><a class="pill link" href="#katalog">Katalogni ko‘rish <b>›</b></a></div></div>
+  </div></div>
+  <div class="marq" aria-hidden="true"><div class="mt"><span>Banner</span><i>✦</i><span>Hajmli bukva</span><i>✦</i><span>Neon</span><i>✦</i><span>Lightbox</span><i>✦</i><span>Stend</span><i>✦</i><span>Roll-up</span><i>✦</i><span>Orakal</span><i>✦</i><span>Tablichka</span><i>✦</i><span>Ruchka</span><i>✦</i><span>Bloknot</span><i>✦</i><span>Paket</span><i>✦</i><span>Bejik</span><i>✦</i><span>Bokal</span><i>✦</i><span>Poster</span><i>✦</i><span>Banner</span><i>✦</i><span>Hajmli bukva</span><i>✦</i><span>Neon</span><i>✦</i><span>Lightbox</span><i>✦</i><span>Stend</span><i>✦</i><span>Roll-up</span><i>✦</i><span>Orakal</span><i>✦</i><span>Tablichka</span><i>✦</i><span>Ruchka</span><i>✦</i><span>Bloknot</span><i>✦</i><span>Paket</span><i>✦</i><span>Bejik</span><i>✦</i><span>Bokal</span><i>✦</i><span>Poster</span><i>✦</i></div></div>
 </header>
 
 <section class="steps3"><div class="in s3w">
@@ -461,7 +650,7 @@ html:not(.L) body{background:radial-gradient(1200px 700px at 15% 20%,rgba(44,123
 </div></section>
 
 <section class="cta" id="aloqa"><div class="ctab rv">
-  <img class="sw ctalogo" data-d="img/hero_c.webp" data-l="img/hero_c.webp" src="img/hero_c.webp" alt="">
+  <img class="sw ctalogo" data-d="img/hero_c.webp" data-l="img/hero_lc.webp" src="img/hero_c.webp" alt="">
   <h2>Reklamangizni bugun <br>3D’da sinab ko‘ring.</h2>
   <p>Ro‘yxatdan o‘tish shart emas — studiyani ochib, darhol boshlang.</p>
   <div class="acts"><a class="pill solid" href="#studio">Studiyani ochish</a><a class="pill glass" href="https://shoxruxjoraboyev61-arch.github.io/graph-mockup/Graph.apk">Android ilova</a></div>
@@ -532,7 +721,7 @@ const D={'Katalog':['Catalog','Каталог'],'Studiya':['Studio','Студи�
 'Assalomu alaykum! Graph platformasida mockup qildim.':['Hello! I made a mockup on Graph.','Здравствуйте! Я сделал(а) мокап на платформе Graph.'],'Mahsulot':['Product','Продукт'],'Dizayn: o‘z maketim':['Design: my own layout','Дизайн: мой макет'],'Ranglar':['Colors','Цвета'],'fon':['background','фон'],'Material':['Material','Материал'],'Bosma ranglari (CMYK)':['Print colors (CMYK)','Цвета печати (CMYK)'],'Natija rasmini ilova qilaman.':['Attaching the result image.','Прикладываю изображение результата.'],'hajmli harflar':['3D letters','объёмные буквы'],
 'Reklamangizni bugun':['Try your advertising','Примерьте свою рекламу'],'3D’da sinab ko‘ring.':['in 3D today.','в 3D уже сегодня.'],'Ro‘yxatdan o‘tish shart emas — studiyani ochib, darhol boshlang.':['No sign-up needed — open the studio and start right away.','Регистрация не нужна — откройте студию и начните сразу.'],
 'Android ilova':['Android app','Android-приложение'],'Tashqi reklama va poligrafiya uchun mockup platforma. Toshkent.':['Mockup platform for outdoor advertising and print. Tashkent.','Мокап-платформа для наружной рекламы и полиграфии. Ташкент.'],
-'Platforma':['Platform','Платформа'],'Mahsulotlar':['Products','Продукты'],'Hamkorlik':['Partnership','Партнёрство'],'Hamkor bo‘lish':['Become a partner','Стать партнёром'],'Agentliklar uchun':['For agencies','Для агентств'],'Pro kod olish':['Get a Pro code','Получить код Pro'],'© 2026 Graph. Barcha huquqlar himoyalangan.':['© 2026 Graph. All rights reserved.','© 2026 Graph. Все права защищены.']};
+'Platforma':['Platform','Платформа'],'Mahsulotlar':['Products','Продукты'],'Hamkorlik':['Partnership','Партнёрство'],'Hamkor bo‘lish':['Become a partner','Стать партнёром'],'Agentliklar uchun':['For agencies','Для агентств'],'Pro kod olish':['Get a Pro code','Получить код Pro'],'© 2026 Graph. Barcha huquqlar himoyalangan.':['© 2026 Graph. All rights reserved.','© 2026 Graph. Все права защищены.'],'mahsulot turi':['product types','видов продукции'],'til: UZ · EN · RU':['languages: UZ · EN · RU','языка: UZ · EN · RU'],'boshlash uchun':['to get started','для старта'],'Hajmli bukva':['3D letters','Объёмные буквы']};
 let LANG='uz';try{LANG=localStorage.getItem('graph-lang')||'uz'}catch(_){}
 const uzNew=s=>s.replace(/O[‘'ʻ`]/g,'Ö').replace(/o[‘'ʻ`]/g,'ö').replace(/G[‘'ʻ`]/g,'Ğ').replace(/g[‘'ʻ`]/g,'ğ').replace(/SH/g,'Ş').replace(/Sh/g,'Ş').replace(/sh/g,'ş').replace(/CH/g,'Ç').replace(/Ch/g,'Ç').replace(/ch/g,'ç');
 const T=s=>{if(!s||/@|t\.me|^Graph$/.test(s))return s;if(LANG==='uz')return uzNew(s);const v=D[s];return v?v[LANG==='en'?0:1]:s};
@@ -774,8 +963,8 @@ document.querySelectorAll('.chips,.stage').forEach(el=>el.setAttribute('data-len
 const links=[...document.querySelectorAll('.menu a')],secs=links.map(a=>document.querySelector(a.getAttribute('href')));
 const stack=$('stack'),bgimg=$('bgimg'),nav=$('nav'),hl=$('hlogo');let mx=0,my=0;addEventListener('pointermove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
 const clock=$('clock');const tk=()=>{try{clock.textContent=new Intl.DateTimeFormat('uz',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Tashkent'}).format(new Date())}catch(_){}};tk();setInterval(tk,20000);
-function frame(t){if(lenis)lenis.raf(t);const y=scrollY,h=innerHeight;nav.classList.toggle('scrolled',y>10);
- if(y<h*1.5&&!reduce){const k=Math.min(1,y/(h*.75));stack.style.transform=`perspective(1800px) rotateX(${(1-k)*16}deg) scale(${.9+.1*k}) translateY(${(1-k)*30}px)`;bgimg.style.transform=`translate3d(0,${y*.35}px,0)`;hl.style.transform=`rotateY(${mx*24}deg) rotateX(${-my*18}deg)`}
+let sx=0,sy=0;function frame(t){if(lenis)lenis.raf(t);const y=scrollY,h=innerHeight;sx+=(mx-sx)*.06;sy+=(my-sy)*.06;nav.classList.toggle('scrolled',y>10);
+ if(y<h*1.5&&!reduce){const k=Math.min(1,y/(h*.75));stack.style.transform=`translateY(${k*-40}px)`;$('hlogoW').style.setProperty('--mx',sx.toFixed(3));$('hlogoW').style.setProperty('--my',sy.toFixed(3));bgimg.style.transform=`translate3d(0,${y*.35}px,0)`;hl.style.transform=`rotateY(${mx*24}deg) rotateX(${-my*18}deg)`}
  let cur=-1;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<h*.45)cur=i});links.forEach((a,i)=>a.classList.toggle('on',i===cur));requestAnimationFrame(frame)}
 requestAnimationFrame(frame);
 $('font').value=S.font;renderCat();selectProduct('bukva');fontLoad();
@@ -907,8 +1096,11 @@ addEventListener('keydown',ev=>{const tg=ev.target;if(/INPUT|TEXTAREA|SELECT/.te
  if(ev.key==='Escape'){select(null);return}
  const s=ev.shiftKey?10:2,m={ArrowLeft:[-s,0],ArrowRight:[s,0],ArrowUp:[0,-s],ArrowDown:[0,s]}[ev.key];if(m){ev.preventDefault();snap();e.x+=m[0];e.y+=m[1];redraw()}});
 addEventListener('resize',abLayout);
+/* hero logo = text height */
+function fitLogo(){const w=$('hlogoW'),t=$('htx'),row=w.parentElement;if(innerWidth<=860){w.style.width=w.style.height='';return}const rw=row.clientWidth;let sz=Math.min(520,rw*.4);for(let k=0;k<3;k++){w.style.width=w.style.height=sz+'px';sz=Math.max(260,Math.min(rw*.46,720,t.offsetHeight*1.12,innerHeight-190))}w.style.width=w.style.height=Math.round(sz)+'px'}
+fitLogo();addEventListener('resize',fitLogo);try{document.fonts.ready.then(fitLogo)}catch(_){}
 /* language */
-function applyLang(l){LANG=l;try{localStorage.setItem('graph-lang',l)}catch(_){}applyStatic();renderChips();renderCat();syncUI();renderAbprod();renderCmykSw();syncProps()}
+function applyLang(l){LANG=l;try{localStorage.setItem('graph-lang',l)}catch(_){}applyStatic();fitLogo();renderChips();renderCat();syncUI();renderAbprod();renderCmykSw();syncProps()}
 $('lang').addEventListener('click',ev=>{const b=ev.target.closest('button');if(b&&b.dataset.l!==LANG)applyLang(b.dataset.l)});
 /* studio modes */
 function setMode(v){$('vPlace').classList.toggle('hidden',v!=='place');$('vDesign').classList.toggle('hidden',v!=='design');[...$('mode').querySelectorAll('button')].forEach(b=>b.classList.toggle('on',b.dataset.v===v));if(v==='place')layout();else abLayout()}
