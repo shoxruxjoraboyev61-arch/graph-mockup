@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#081226">
-<meta name="description" content="Graph — tashqi reklama va poligrafiya uchun mockup platforma. Reklamani ishlab chiqarishdan oldin 3D'da ko'ring.">
+<meta name="description" content="Graph — tashqi reklama va poligrafiya uchun mockup platforma.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-180.png">
@@ -40,7 +40,7 @@ a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--ice);outline-offset:3px}
 
 html:not(.L) body{background:radial-gradient(1200px 700px at 15% 20%,rgba(44,123,229,.22),transparent 60%),radial-gradient(1000px 800px at 90% 55%,rgba(30,90,200,.18),transparent 60%),radial-gradient(900px 700px at 30% 92%,rgba(60,130,255,.14),transparent 60%),linear-gradient(180deg,#0a1630,#081226 40%,#0a1733);background-attachment:fixed}
-.hlogo{width:clamp(150px,17vw,230px);margin:0 auto 6px;perspective:900px}
+.hlogo{width:clamp(96px,14vh,170px);margin:0 auto 4px;perspective:900px}
 .hlogo img{width:100%;height:auto;display:block;animation:bob 7s ease-in-out infinite;filter:drop-shadow(0 20px 50px rgba(44,123,229,.45));transition:transform .6s var(--spring)}
 .L .hlogo img{filter:drop-shadow(0 24px 40px rgba(20,60,140,.2))}
 @keyframes bob{50%{translate:0 -10px}}
@@ -74,18 +74,19 @@ html:not(.L) body{background:radial-gradient(1200px 700px at 15% 20%,rgba(44,123
 .tbtn[data-m=d] .sun,.tbtn[data-m=l] .moon{opacity:0;transform:rotate(-90deg) scale(.5)}
 
 /* hero */
-.hero{position:relative;padding:96px 0 60px;text-align:center}
+.hero{position:relative;padding:0 0 60px;text-align:center}
+.hin{min-height:88svh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding-top:70px;padding-bottom:clamp(20px,6vh,70px)}
 .bgimg{position:absolute;inset:0 0 auto;height:1000px;background:url(img/bg.jpg) center 80%/cover;opacity:.8;-webkit-mask:linear-gradient(#000 30%,transparent);mask:linear-gradient(#000 30%,transparent);will-change:transform}
 .L .bgimg{background-image:url(img/bg_l.jpg);opacity:.7}
 .hin{position:relative;max-width:980px;margin:0 auto;padding:0 24px}
-.kick{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--dim);margin:0 0 22px;padding:6px 14px;border-radius:999px;border:1px solid var(--edge2);background:var(--glass)}
+.kick{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--dim);margin:0 0 clamp(14px,2.4vh,22px);padding:6px 14px;border-radius:999px;border:1px solid var(--edge2);background:var(--glass)}
 .kick i{width:6px;height:6px;border-radius:50%;background:#3ddc84}
-.hero h1{font-weight:600;font-size:clamp(46px,7.4vw,108px);line-height:.98;letter-spacing:-.055em;margin:0 0 26px}
+.hero h1{font-weight:600;font-size:clamp(38px,min(5.6vw,8.6vh),84px);line-height:1.02;letter-spacing:-.05em;margin:0 0 clamp(14px,2.6vh,24px);text-wrap:balance}
 .grad{background:linear-gradient(100deg,#d6e6ff 0%,#6aa8ff 45%,#2c7be5 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .L .grad{background:linear-gradient(100deg,#2c7be5,#0b2a5c);-webkit-background-clip:text;background-clip:text}
-.sub{font-size:clamp(18px,1.6vw,22px);color:var(--dim);max-width:40ch;margin:0 auto 36px;line-height:1.45}
+.sub{font-size:clamp(16px,min(1.4vw,2.3vh),20px);color:var(--dim);max-width:46ch;margin:0 auto clamp(20px,3.6vh,34px);line-height:1.5}
 .hero .acts{justify-content:center}
-.show{position:relative;display:grid;grid-template-columns:1fr 1.35fr 1fr;gap:20px;align-items:end;max-width:1200px;margin:80px auto 0;padding:0 24px;transform-origin:50% 100%;will-change:transform}
+.show{position:relative;display:grid;grid-template-columns:1fr 1.35fr 1fr;gap:20px;align-items:end;max-width:1200px;margin:0 auto;padding:0 24px;transform-origin:50% 100%;will-change:transform}
 .shot{border-radius:26px;overflow:hidden;background:#fff;box-shadow:0 30px 70px -30px rgba(0,10,40,.45),0 0 0 1px var(--edge)}
 .shot canvas{display:block;width:100%;aspect-ratio:1;height:auto}
 .shot.side{transform:translateY(-40px)}
@@ -121,7 +122,7 @@ html:not(.L) body{background:radial-gradient(1200px 700px at 15% 20%,rgba(44,123
 .dots{display:flex;gap:7px;width:120px}.dots i{width:11px;height:11px;border-radius:50%;background:var(--edge2)}
 .plan{display:flex;align-items:center;justify-content:flex-end;gap:8px;font-size:13px;color:var(--dim);width:auto;min-width:120px}
 .plan b{color:var(--ink);font-weight:600}
-.view{padding:24px}
+.view{padding:28px}
 .chips{display:flex;gap:6px;overflow-x:auto;padding:2px 2px 16px;scrollbar-width:none}
 .chips::-webkit-scrollbar{display:none}
 .chip{flex:none;border:1px solid var(--edge);background:transparent;border-radius:999px;padding:9px 16px;cursor:pointer;font-size:14px;font-weight:500;white-space:nowrap;color:var(--dim)}
@@ -169,10 +170,20 @@ html:not(.L) body{background:radial-gradient(1200px 700px at 15% 20%,rgba(44,123
 .part a{color:var(--blue);font-weight:500}
 
 /* close */
-.cta{text-align:center;padding:clamp(110px,16vh,180px) 24px}
-.cta h2{font-weight:600;font-size:clamp(44px,6.4vw,96px);letter-spacing:-.05em;line-height:1;margin:0 0 30px}
+.cta{padding:clamp(60px,10vh,120px) 24px clamp(60px,9vh,100px)}
+.ctab{position:relative;max-width:1200px;margin:0 auto;text-align:center;border-radius:36px;padding:clamp(56px,9vw,110px) 24px;overflow:hidden;color:#fff;background:radial-gradient(700px 400px at 50% 0%,rgba(255,255,255,.22),transparent 70%),linear-gradient(160deg,#3d8bff 0%,#1f5fd0 45%,#0b2a5c 100%);box-shadow:0 50px 100px -40px rgba(20,70,170,.6)}
+.ctalogo{width:clamp(80px,9vw,120px);margin:0 auto 18px;display:block;height:auto;filter:drop-shadow(0 16px 30px rgba(0,0,0,.3))}
+.ctab p{color:#d9e6ff;font-size:clamp(16px,1.4vw,20px);margin:0 auto 32px;max-width:40ch}
+.ctab .pill.solid{background:#fff;color:#0b2a5c}.ctab .pill.glass{color:#fff;border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.1)}
+.cta h2{font-weight:600;font-size:clamp(34px,5vw,72px);letter-spacing:-.045em;line-height:1.04;margin:0 0 18px}
 .cta .acts{justify-content:center}
-footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--dim);font-size:13px;padding:24px;max-width:1200px;margin:0 auto;border-top:1px solid var(--edge)}
+.foot{border-top:1px solid var(--edge);padding:64px 0 28px;color:var(--dim);font-size:14px}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px}
+.fbrand p{margin:14px 0 20px;max-width:30ch;line-height:1.55}
+.foot h4{margin:4px 0 16px;color:var(--ink);font-size:14px;font-weight:600}
+.foot .fgrid>div>a:not(.pill):not(.logo){display:block;padding:5px 0;transition:color .3s}.foot a:hover{color:var(--ink)}
+.fbot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:48px;padding-top:22px;border-top:1px solid var(--edge);font-size:13px}
+@media(max-width:760px){.fgrid{grid-template-columns:1fr 1fr;gap:30px}.fbrand{grid-column:1/-1}.ctab{border-radius:26px}}
 
 /* modal */
 .md{position:fixed;inset:0;z-index:80;background:rgba(0,0,0,.72);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:grid;place-items:center;padding:4vw;overflow:auto}
@@ -191,7 +202,7 @@ footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:
 .rv.vis{opacity:1;transform:none}
 
 @media(max-width:1000px){.cfg{grid-template-columns:minmax(0,1fr)}.plans{grid-template-columns:minmax(0,1fr);max-width:480px;margin:0 auto}.md .box{grid-template-columns:minmax(0,1fr)}}
-@media(max-width:760px){.menu{display:none}.show{grid-template-columns:1fr;max-width:420px;margin-top:56px}.show .shot.side{display:none}.s3w{grid-template-columns:1fr;gap:28px}.cgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.pc h3{font-size:16px}.pc .tx span{display:none}.dots{display:none}.appbar{flex-wrap:wrap}.plan{min-width:0}.view{padding:14px}.app{border-radius:22px;margin:0 -8px}.in{padding:0 16px}.h{width:30px;height:30px;margin:-15px 0 0 -15px}.hero{padding-top:80px}.steps3{padding-top:80px}}
+@media(max-width:760px){.menu{display:none}.show{grid-template-columns:1fr;max-width:420px;margin-top:56px}.show .shot.side{display:none}.s3w{grid-template-columns:1fr;gap:28px}.cgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.pc h3{font-size:16px}.pc .tx span{display:none}.dots{display:none}.appbar{flex-wrap:wrap}.plan{min-width:0}.view{padding:14px}.app{border-radius:22px;margin:0 -8px}.in{padding:0 16px}.h{width:30px;height:30px;margin:-15px 0 0 -15px}.hin{min-height:auto;padding-top:96px;padding-bottom:40px}.steps3{padding-top:80px}}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
 
 /* ---------- premium motion (iOS-like) ---------- */
@@ -229,7 +240,7 @@ footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:
 
 /* ---------- design editor ---------- */
 .ed{display:grid;grid-template-columns:78px minmax(0,1fr) 350px;gap:16px;margin-top:30px;align-items:start}
-.etool{display:flex;flex-direction:column;gap:4px;padding:8px;border-radius:22px;position:sticky;top:90px}
+.etool{display:flex;flex-direction:column;gap:6px;padding:10px 8px;border-radius:22px;position:sticky;top:90px}
 .tb{position:relative;display:flex;flex-direction:column;align-items:center;gap:5px;border:0;background:none;padding:11px 4px;border-radius:15px;cursor:pointer;font-size:11px;font-weight:500;color:var(--dim);text-align:center;line-height:1.1}
 .tb svg{width:22px;height:22px;color:var(--ink)}
 .tb:hover{background:rgba(127,160,220,.14);color:var(--ink)}
@@ -238,8 +249,9 @@ footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:
 .tsep{height:1px;background:var(--edge);margin:4px 6px}
 .lab2{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;color:var(--dim);font-weight:500;margin-bottom:8px}
 .fontrow{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 12px;scrollbar-width:thin;scroll-snap-type:x proximity}
-.fchip{flex:none;scroll-snap-align:start;border:1px solid var(--edge);background:var(--card);border-radius:16px;padding:9px 15px 8px;cursor:pointer;text-align:left;line-height:1.05;color:var(--ink)}
-.fchip span{display:block;font-size:22px;white-space:nowrap}
+.fchip{flex:none;width:104px;overflow:hidden;text-align:center;scroll-snap-align:start;border:1px solid var(--edge);background:var(--card);border-radius:16px;padding:9px 15px 8px;cursor:pointer;text-align:left;line-height:1.05;color:var(--ink)}
+.fchip span{display:block;font-size:26px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fchip small{overflow:hidden;text-overflow:ellipsis}
 .fchip small{display:block;font:500 11px "Inter Tight",sans-serif;color:var(--dim);margin-top:4px;white-space:nowrap}
 .fchip.on{border-color:var(--blue);box-shadow:inset 0 0 0 1.5px var(--blue),0 8px 20px rgba(44,123,229,.25);transform:translateY(-2px)}
 .ebar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
@@ -448,11 +460,21 @@ footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:
   <p class="part rv">Reklama ishlab chiqaruvchi firmamisiz? Tez orada narxlaringizni platformaga qo‘shib, mijozlardan to‘g‘ridan-to‘g‘ri buyurtma olasiz. <a href="https://t.me/shokh_graph">Hamkor bo‘lish ›</a></p>
 </div></section>
 
-<section class="cta" id="aloqa">
-  <h2 class="rv">Bugunoq <span class="grad">sinab ko‘ring.</span></h2>
-  <div class="acts rv"><a class="pill solid" href="#studio">Studiyani ochish</a><a class="pill link" href="https://t.me/shokh_graph">@shokh_graph <b>›</b></a></div>
-</section>
-<footer><span>© 2026 Graph</span><span>Toshkent · <span id="clock" data-nt>--:--</span></span></footer>
+<section class="cta" id="aloqa"><div class="ctab rv">
+  <img class="sw ctalogo" data-d="img/hero_c.webp" data-l="img/hero_c.webp" src="img/hero_c.webp" alt="">
+  <h2>Reklamangizni bugun <br>3D’da sinab ko‘ring.</h2>
+  <p>Ro‘yxatdan o‘tish shart emas — studiyani ochib, darhol boshlang.</p>
+  <div class="acts"><a class="pill solid" href="#studio">Studiyani ochish</a><a class="pill glass" href="https://shoxruxjoraboyev61-arch.github.io/graph-mockup/Graph.apk">Android ilova</a></div>
+</div></section>
+<footer class="foot"><div class="in">
+  <div class="fgrid">
+    <div class="fbrand"><a class="logo" href="#top"><i>G</i>Graph</a><p>Tashqi reklama va poligrafiya uchun mockup platforma. Toshkent.</p><a class="pill glass" href="https://t.me/shokh_graph" style="min-height:42px">Telegram: @shokh_graph</a></div>
+    <div><h4>Platforma</h4><a href="#katalog">Katalog</a><a href="#studio">Studiya</a><a href="#tarif">Narxlar</a><a href="https://shoxruxjoraboyev61-arch.github.io/graph-mockup/Graph.apk">Android ilova</a></div>
+    <div><h4>Mahsulotlar</h4><a href="#katalog">Banner</a><a href="#katalog">Bukva va neon</a><a href="#katalog">Stend</a><a href="#katalog">Orakal</a><a href="#katalog">Poligrafiya</a></div>
+    <div><h4>Hamkorlik</h4><a href="https://t.me/shokh_graph">Hamkor bo‘lish</a><a href="https://t.me/shokh_graph">Agentliklar uchun</a><a href="https://t.me/shokh_graph">Pro kod olish</a></div>
+  </div>
+  <div class="fbot"><span>© 2026 Graph. Barcha huquqlar himoyalangan.</span><span>Toshkent · <span id="clock" data-nt>--:--</span></span></div>
+</div></footer>
 
 <div class="md" id="res" hidden><button class="x" id="resx" aria-label="Yopish">×</button><div class="box"><img id="resimg" alt="Natija"><div><small id="rsub" data-nt>Natija</small><h3>Tayyor</h3><p>Rasmni saqlash: telefonda rasm ustida bosib turing, kompyuterda o‘ng tugma → “Rasmni saqlash”.</p><p id="rwm" class="hidden">Bepul rejimda rasmda “Graph” belgisi bor. Toza va HD natija — Pro’da.</p><div class="acts"><a class="pill solid" href="https://t.me/shokh_graph">Buyurtma berish</a><button class="pill glass" id="copy" type="button">Matnni nusxalash</button></div><p class="msg" id="copied" data-nt></p></div></div></div>
 <div class="md sm" id="pro" hidden><button class="x" id="prox" aria-label="Yopish">×</button><div class="box"><div><small>Pro tarif</small><h3>Pro’ni faollashtirish</h3><p>Pro kodini Telegram orqali oling va shu yerga kiriting. Kod shu qurilmada saqlanadi.</p><input id="code" placeholder="GRAPH-XXXX-XXXX" autocomplete="off" aria-label="Pro kod"><div class="acts"><button class="pill solid" id="act" type="button">Faollashtirish</button><a class="pill glass" href="https://t.me/shokh_graph">Kod olish</a></div><p class="msg" id="pmsg" data-nt></p></div></div></div>
@@ -507,7 +529,10 @@ const D={'Katalog':['Catalog','Каталог'],'Studiya':['Studio','Студи�
 'Muqovasida brendingiz bo‘lgan bloknot.':['Notebook with your brand on the cover.','Блокнот с вашим брендом на обложке.'],'Qog‘oz paket — har bir xarid reklama.':['Paper bag — every purchase is an ad.','Бумажный пакет — каждая покупка как реклама.'],
 'Logotipli krujka — ofis va sovg‘a uchun.':['Branded mug for the office and gifts.','Кружка с логотипом — для офиса и подарков.'],'Xodimlar va tadbirlar uchun bejik.':['Badge for staff and events.','Бейдж для сотрудников и мероприятий.'],'Poster va afisha — ramkada real ko‘rinish.':['Posters — realistic in a frame.','Постеры и афиши — реалистично в рамке.'],
 'Peshtoq':['Storefront','Фасад'],'Fasad banneri':['Facade banner','Фасадный баннер'],'Press-devor':['Press wall','Пресс-волл'],'Roll-up':['Roll-up','Ролл-ап'],'Chap vitrina':['Left window','Левая витрина'],'O‘ng vitrina':['Right window','Правая витрина'],'Kirish':['Entrance','Вход'],'Muqova':['Cover','Обложка'],'Old tomoni':['Front','Лицевая сторона'],'Yon tomoni':['Side','Сторона'],'Poster':['Poster','Постер'],
-'Assalomu alaykum! Graph platformasida mockup qildim.':['Hello! I made a mockup on Graph.','Здравствуйте! Я сделал(а) мокап на платформе Graph.'],'Mahsulot':['Product','Продукт'],'Dizayn: o‘z maketim':['Design: my own layout','Дизайн: мой макет'],'Ranglar':['Colors','Цвета'],'fon':['background','фон'],'Material':['Material','Материал'],'Bosma ranglari (CMYK)':['Print colors (CMYK)','Цвета печати (CMYK)'],'Natija rasmini ilova qilaman.':['Attaching the result image.','Прикладываю изображение результата.'],'hajmli harflar':['3D letters','объёмные буквы']};
+'Assalomu alaykum! Graph platformasida mockup qildim.':['Hello! I made a mockup on Graph.','Здравствуйте! Я сделал(а) мокап на платформе Graph.'],'Mahsulot':['Product','Продукт'],'Dizayn: o‘z maketim':['Design: my own layout','Дизайн: мой макет'],'Ranglar':['Colors','Цвета'],'fon':['background','фон'],'Material':['Material','Материал'],'Bosma ranglari (CMYK)':['Print colors (CMYK)','Цвета печати (CMYK)'],'Natija rasmini ilova qilaman.':['Attaching the result image.','Прикладываю изображение результата.'],'hajmli harflar':['3D letters','объёмные буквы'],
+'Reklamangizni bugun':['Try your advertising','Примерьте свою рекламу'],'3D’da sinab ko‘ring.':['in 3D today.','в 3D уже сегодня.'],'Ro‘yxatdan o‘tish shart emas — studiyani ochib, darhol boshlang.':['No sign-up needed — open the studio and start right away.','Регистрация не нужна — откройте студию и начните сразу.'],
+'Android ilova':['Android app','Android-приложение'],'Tashqi reklama va poligrafiya uchun mockup platforma. Toshkent.':['Mockup platform for outdoor advertising and print. Tashkent.','Мокап-платформа для наружной рекламы и полиграфии. Ташкент.'],
+'Platforma':['Platform','Платформа'],'Mahsulotlar':['Products','Продукты'],'Hamkorlik':['Partnership','Партнёрство'],'Hamkor bo‘lish':['Become a partner','Стать партнёром'],'Agentliklar uchun':['For agencies','Для агентств'],'Pro kod olish':['Get a Pro code','Получить код Pro'],'© 2026 Graph. Barcha huquqlar himoyalangan.':['© 2026 Graph. All rights reserved.','© 2026 Graph. Все права защищены.']};
 let LANG='uz';try{LANG=localStorage.getItem('graph-lang')||'uz'}catch(_){}
 const uzNew=s=>s.replace(/O[‘'ʻ`]/g,'Ö').replace(/o[‘'ʻ`]/g,'ö').replace(/G[‘'ʻ`]/g,'Ğ').replace(/g[‘'ʻ`]/g,'ğ').replace(/SH/g,'Ş').replace(/Sh/g,'Ş').replace(/sh/g,'ş').replace(/CH/g,'Ç').replace(/Ch/g,'Ç').replace(/ch/g,'ç');
 const T=s=>{if(!s||/@|t\.me|^Graph$/.test(s))return s;if(LANG==='uz')return uzNew(s);const v=D[s];return v?v[LANG==='en'?0:1]:s};
@@ -857,7 +882,7 @@ $('tText').addEventListener('click',()=>{snap();addText(T('Yangi matn'),{size:Ma
 $('tRect').addEventListener('click',()=>{snap();addShape('rect')});$('tEll').addEventListener('click',()=>{snap();addShape('ell')});
 $('tUndo').addEventListener('click',undo);
 /* fonts row */
-$('fontrow').innerHTML=FONTS.map(([f,ws])=>`<button class="fchip" type="button" data-f="${f}" style="font-family:'${f}';font-weight:${ws[ws.length-1]}"><span>Graph Aa</span><small>${f}</small></button>`).join('');
+$('fontrow').innerHTML=FONTS.map(([f,ws])=>`<button class="fchip" type="button" data-f="${f}" style="font-family:'${f}';font-weight:${ws[ws.length-1]}"><span>Aa</span><small>${f}</small></button>`).join('');
 $('fontrow').addEventListener('click',ev=>{const c=ev.target.closest('.fchip');if(!c)return;snap();const f=c.dataset.f,ws=FW[f];let e=E.sel;if(!e||e.t!=='text')e=addText(T('Matn'),{font:f,weight:ws[ws.length-1]});else{e.font=f;if(!ws.includes(e.weight))e.weight=ws[ws.length-1]}loadF(e);syncProps();redraw()});
 /* artboard size + target */
 const PRES={sq:1,b3:3,b2:2,ah:1.414,av:1/1.414,st:9/16};
